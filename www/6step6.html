@@ -1,0 +1,150 @@
+<style>
+  .step6-content {
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Book', sans-serif;
+  }
+
+  .step6-content p {
+    font-size: 1.75rem;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 100%;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+
+  .boxes9-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .step6-box {
+    position: relative;
+    width: 350px;
+    height: 300px;
+    background-color: #428BCA;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Ensure the additional text doesn't overflow */
+  }
+
+  .step6-box:hover {
+    background-color: #345c80; /* Change the background color when hovered */
+  }
+
+  .additional-text {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #345c80;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #ffffff; /* Text color for additional text */
+    display: none;
+    z-index: 1; /* Ensure the additional text is above the content */
+  }
+
+  .step6-box:hover .additional-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .step6-box p1{
+    font-size: 1.75rem;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 100%;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #ffffff;
+    z-index: 2; /* Ensure the text is above the additional text */
+  }
+
+  .step6-box p2{
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #ffffff;
+    z-index: 2; /* Ensure the text is above the additional text */
+  }
+  
+  .step6-box:hover p1 {
+    display: none; /* Hide  text on hover */
+  }
+
+
+  .step6-box h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    margin-left: 10px;
+    color: #ffffff;
+  }
+
+  .step6-content ul {
+      font-size: 1.75rem; /* Adjust the font size for paragraphs */
+	    font-family: 'Franklin Gothic Book', sans-serif;
+      text-align: left; /* Center text horizontally within each paragraph */
+      word-wrap: break-word; /* Allow words to break and wrap onto the next line */
+      max-width: 100%; /* Set a maximum width for the text */
+      list-style-type: disc; /* Use 'disc' for filled circles, 'circle' for empty circles, 'square' for filled squares, or 'none' for no bullets */
+      margin-left: 100px; /* Adjust the margin for spacing between the box and bullets */
+    }
+
+
+    .step6-content ul li {
+      font-size: 1.75rem; /* Adjust the font size for paragraphs */
+	    font-family: 'Franklin Gothic Book', sans-serif;
+      text-align: left; /* Center text horizontally within each paragraph */
+      word-wrap: break-word; /* Allow words to break and wrap onto the next line */
+      max-width: 100%; /* Set a maximum width for the text */
+      margin-left: 125px; /* Adjust the margin for spacing between the box and bullets */
+    }
+</style>
+
+  <div class="step6-content">
+    <p style="margin-top: 0px;">Here, the indoor climate parameters are determined. These are crucial for various factors such as energy consumption, indoor air quality, and occupant comfort. The parameters also have an impact on the wetting and drying potential of materials from the inside of the building. Indoor climate, including temperature, relative humidity, and ventilation conditions. It's important to represent conditions that match the building's anticipated use, which might require slightly elevated humidity levels for a conservative approach.</p>
+  </div>
+
+  <div class="boxes9-container">
+    <div class="step6-box">
+      <h2>Superior</h2>
+      <p1>The indoor climate is defined by measured values for the specific building, or a building in the same outdoor climate and similar user behavior, or defined by the setpoint-values of the HVAC systems.</p1>
+      <div class="additional-text">
+        <p2>The indoor climate is defined by measured values for the specific building, or a building in the same outdoor climate and similar user behavior, or defined by the setpoint-values of the HVAC systems. Note: this approach does not account for changes in indoor climate over time.</p2>
+      </div>
+    </div>
+  <div class="step6-box">
+      <h2>Advanced</h2>
+      <p1>Numerical building simulation software is used to calculate the indoor climate during or prior to the HAM simulation. The main emphasis is on precise modeling of both indoor moisture load and ventilation conditions to ensure an accurate representation of reality. </p1>
+        <div class="additional-text">
+          <p2>Numerical building simulation software is used to calculate the indoor climate during or prior to the HAM simulation. The main emphasis is on precise modeling of both indoor moisture load and ventilation conditions to ensure an accurate representation of reality. </p2>
+        </div>  
+  </div>
+  <div class="step6-box">
+      <h2>Minimum</h2>
+	  <p1>The indoor climate is determined by the national standard or based on an adaptive indoor climate. In case of a new design assessment, the indoor conditions are set to accommodate the highest possible moisture loads, to represent the most critical use scenario.</p1>
+    <div class="additional-text">
+      <p2>The indoor climate is determined by the national standard or based on an adaptive indoor climate. According to EN ISO 15026 Annex D, an adaptive internal humidity can be computed for heated buildings based on the outdoor temperature. In case of a new design assessment, the indoor conditions are set to accommodate the highest possible moisture loads, to represent the most critical use scenario.</p2>
+    </div>
+  </div>
+  </div>

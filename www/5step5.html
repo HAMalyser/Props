@@ -1,0 +1,140 @@
+<style>
+  .step5-content {
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Book', sans-serif;
+  }
+
+  .step5-content p {
+    font-size: 1.75rem;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 100%;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+
+  .boxes5-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .step5-box {
+    position: relative;
+    width: 350px;
+    height: 375px;
+    background-color: #428BCA;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Ensure the additional text doesn't overflow */
+  }
+
+  .step5-box:hover {
+    background-color: #345c80; /* Change the background color when hovered */
+  }
+
+  .additional-text {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #345c80;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #ffffff; /* Text color for additional text */
+    display: none;
+    z-index: 1; /* Ensure the additional text is above the content */
+  }
+
+  .step5-box:hover .additional-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .step5-box p1{
+    font-size: 1.75rem;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 100%;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #ffffff;
+    z-index: 2; /* Ensure the text is above the additional text */
+  }
+
+  .step5-box p2{
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #ffffff;
+    z-index: 2; /* Ensure the text is above the additional text */
+  }
+  
+  .step5-box:hover p1 {
+    display: none; /* Hide  text on hover */
+  }
+
+
+  .step5-box h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    margin-left: 10px;
+    color: #ffffff;
+  }
+
+  .step5-content ul {
+      font-size: 1.75rem; /* Adjust the font size for paragraphs */
+	    font-family: 'Franklin Gothic Book', sans-serif;
+      text-align: left; /* Center text horizontally within each paragraph */
+      word-wrap: break-word; /* Allow words to break and wrap onto the next line */
+      max-width: 100%; /* Set a maximum width for the text */
+      list-style-type: disc; /* Use 'disc' for filled circles, 'circle' for empty circles, 'square' for filled squares, or 'none' for no bullets */
+      margin-left: 100px; /* Adjust the margin for spacing between the box and bullets */
+    }
+
+
+    .step5-content ul li {
+      font-size: 1.75rem; /* Adjust the font size for paragraphs */
+	    font-family: 'Franklin Gothic Book', sans-serif;
+      text-align: left; /* Center text horizontally within each paragraph */
+      word-wrap: break-word; /* Allow words to break and wrap onto the next line */
+      max-width: 100%; /* Set a maximum width for the text */
+      margin-left: 125px; /* Adjust the margin for spacing between the box and bullets */
+    }
+</style>
+
+  <div class="step5-content">
+    <img width="195" src="pictures/ExteriorTransfer.png" align="left" alt="icon_files" height="301" style="float: left;margin-right: 60px; margin-right: 5px; margin-top: 0px; ">
+  </div>
+  <div class="step5-content">
+    <p style="margin-top: 100px;">External surface transfer are crucial for the overall hygrothermal performance as the refer to the rate of heat and mass transfer from the environment to the material surface or vice versa. The mass transfer will define the wetting and drying of the building materials. The different mechanism include:</p>
+        <ul>  
+          <li>Convective heat transfer.</li>
+          <li>Radiative heat transfer (e.g. sun radiation or longwave from the sky).</li>
+          <li>Vapor mass transfer.</li>
+          <li>Liquid mass transfer.</li>
+        </ul>
+  </div>
+
+  <div class="step5-content">
+    <p style="margin-top: 50px;">The way these coefficients are spread on the outer surface defines the temperature and moisture distribution over the building shell. Uneven distribution may lead to specific areas being more susceptible to moisture buildup, some parts cooler, or having better drying potential. For instance, in a tall building, the stack effect and wind pressure differences can result in varied coefficient distribution, affecting moisture and temperature across different levels.</p>
+    <img width="455" src="pictures/CanadianParliament.png" align="center" alt="icon_files" height="330" style="margin: 0 auto; display: block;">
+  </div>

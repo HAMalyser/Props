@@ -1,0 +1,168 @@
+<style>
+  .step4-content {
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Book', sans-serif;
+  }
+
+  .step4-content p {
+    font-size: 1.75rem;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 100%;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+
+  .boxes4-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .step4-box3 {
+    position: relative;
+    width: 350px;
+    height: 410px;
+    background-color: #428BCA;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Ensure the additional text doesn't overflow */
+  }
+
+  .step4-box3:hover {
+    background-color: #345c80; /* Change the background color when hovered */
+  }
+
+  .additional-text {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #345c80;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #ffffff; /* Text color for additional text */
+    display: none;
+    z-index: 1; /* Ensure the additional text is above the content */
+  }
+
+  .step4-box3:hover .additional-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .step4-box3 p1{
+    font-size: 1.75rem;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 100%;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #ffffff;
+    z-index: 2; /* Ensure the text is above the additional text */
+  }
+
+  .step4-box3 p2{
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #ffffff;
+    z-index: 2; /* Ensure the text is above the additional text */
+  }
+  
+  .step4-box3:hover p1 {
+    display: none; /* Hide  text on hover */
+  }
+
+  .step4-box3 h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    margin-left: 10px;
+    color: #ffffff;
+  }
+</style>
+
+    <div class="boxes4-container">
+      <div class="step4-box3">
+        <h2>Superior</h2>
+        <p1>Time resolution of 10 min</p1>
+        <p1>The climate input is an entire long-term climate dataset. At least 10 years of (measured) data are used. Ideally, the dataset consists of 30 years of continuous data with 10-min resolution.</p1>
+        <div class="additional-text">
+          <p2>Time resolution of 10 min</p2>
+          <p2>The climate input is an entire long-term climate dataset. At least 10 years of (measured) data are used. Ideally, the dataset consists of 30 years of continuous data with 10-min resolution.</p2>
+        </div>
+      </div>
+    <div class="step4-box3">
+        <h2>Advanced</h2>
+        <p1>Time resolution 60 min</p1>
+        <p1>A Moisture Reference Year (MRY) is used as outdoor climate input. The MRY is selected and evaluated within the study.</p1>
+      <div class="additional-text">
+        <p2>Time resolution 60 min</p2>
+        <p2>A Moisture Reference Year (MRY) is used as outdoor climate input. The MRY is selected and evaluated within the study. A comprehensive framework to select MRYs is developed by Vandemeulebroucke et al. (2022).</p2>
+      </div>  
+    </div>
+    <div class="step4-box3">
+        <h2>Minimum</h2>
+        <p1>Time resolution 60 min</p1>
+        <p1>A Moisture Reference Year (MRY) is used as outdoor climate input. The MRY can be selected from the available databases, or from another source that provides climate files for HAM simulations. Without specified reference years, a yearly temperature adjustment of 2K can be applied to a representative year, depending on the likelihood of summer or winter condensation issues. The relative humidity remains the same.</p1>
+      <div class="additional-text">
+        <p2>Time resolution 60 min</p2>
+        <p2>A Moisture Reference Year (MRY) is used as outdoor climate input. The MRY can be selected from the available databases, or from another source that provides climate files for HAM simulations. Example of an open data: MRY for Brussels. Without specified reference years, a yearly temperature adjustment of 2K can be applied to a representative year, depending on the likelihood of summer or winter condensation issues. The relative humidity remains the same. The modification yields data for a critical year expected to occur once every ten years according to EN 15026.</p2>
+      </div>
+    </div>
+    </div>
+
+
+<div class="step4-content">
+  <p>Different deterioration mechanisms exhibit varying rates of initiation and growth. For example, the crystallization of salts occurs rapidly (Godts et al. 2021) whereas the initiation and growth of mould fungi is much slower (Viitanen 2008). Therefore, it is important to use an appropriate time resolution during hygrothermal simulations to capture the events of interest. The time resolution does not only apply to the resolution of the simulation output, but also on the climate conditions. The standard EN 15026 dictates that at least an hourly resolution is to be used. However, according to Blocken and Carmeliet (2007), arithmetic averaging of 10-minute wind and rain data towards hourly values leads to the loss of information on the co-occurrence of these climate variables. The latter could lead to an underestimation of the wind-driven rain loads and intensities up to 45%. For the superior level, a time interval of at least 10 minutes should be used for the climate date, whereas hourly data is sufficient for meeting the advanced and minimum requirements in the case degradation models do not dictate otherwise. </p>
+</div>
+
+  <div class="boxes4-container">
+    <div class="step4-box3">
+      <h2>Superior</h2>
+      <p1>Time resolution 60 min</p1>
+      <p1>Multiple climate models, and RCP scenarios or GW levels are included in the ensemble. Per climate model, a 30-year simulated historical (baseline) period is compared with one or more 30-year climate projections (from the same climate model as the baseline period). </p1>
+      <div class="additional-text">
+        <p2>Time resolution 60 min</p2>
+        <p2>Multiple climate models, and RCP scenarios or GW levels are included in the ensemble. Per climate model, a 30-year simulated historical (baseline) period is compared with one or more 30-year climate projections (from the same climate model as the baseline period). The ensemble approach accurately quantifies the uncertainty of the results. It is necessary to assess the bias of the models through a comparison with the historical observations. The potential impact of the biases that may arise, is determined.</p2>
+      </div>
+    </div>
+  <div class="step4-box3">
+      <h2>Advanced</h2>
+      <p1>Time resolution 60 min</p1>
+      <p1>A 30-year historical (baseline) period is compared with an ensemble of ca. three 30-year climate projections (all from the same climate model). The ensemble members can consist of different future scenarios by one climate model.</p1>
+    <div class="additional-text">
+      <p2>Time resolution 60 min</p2>
+      <p2>A 30-year historical (baseline) period is compared with an ensemble of ca. three 30-year climate projections (all from the same climate model). The ensemble members can consist of different future scenarios by one climate model. The ensemble quantifies the uncertainty of the results to a limited extend. It is necessary to assess the bias of the models through a comparison with the historical observations.</p2>
+    </div>  
+  </div>
+  <div class="step4-box3">
+      <h2>Minimum</h2>
+      <p1>Time resolution 60 min</p1>
+      <p1>A 30-year historical (baseline) period is compared with one 30-year climate projection (both from the same climate model).</p1>
+    <div class="additional-text">
+      <p2>Time resolution 60 min</p2>
+      <p2>A 30-year historical (baseline) period is compared with one 30-year climate projection (both from the same climate model). In this case, biases in the climate model for the specific location are not accounted for. Next to that, the uncertainty induced by uncertainty in climate change effects is unknown.</p2>
+    </div>
+  </div>
+  </div>
+
+

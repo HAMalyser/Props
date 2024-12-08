@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Three Boxes</title>
+  <style>
+    .main-content {
+      text-align: center;
+      margin-bottom: 20px;
+      font-family: 'Franklin Gothic Book', sans-serif;
+    }
+	
+    .boxes-container {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .box {
+      width: 300px; /* You can adjust the width as needed */
+      height: 250px; /* You can adjust the height as needed */
+      background-color: #428BCA;
+      border-radius: 10px; /* Adjust the border-radius for rounded corners */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff; /* Text color */
+      margin: 0 10px; /* Adjust the margin for controllable whitespace between the boxes */
+      font-family: 'Franklin Gothic Book', sans-serif; /* Specify the font family */
+    }
+
+    .box p {
+      text-align: center; /* Center text horizontally within each paragraph */
+    }
+	
+	.text-content {
+      flex: 1;
+    }
+	
+	
+  </style>
+</head>
+<body>
+  <div class="boxes-container">
+    <div class="box">
+      <p><strong>Superior </strong></p>
+      <p>A performance risk criteria or material-specific degradation model is determined based on a quantification process where a material or building-specific sensitivity is established.</p>
+    </div>
+    <div class="box">
+      <p><strong>Advanced </strong></p>
+      <p>A time of wetness or dose response index is calculated based on multiple risk-inducing factors, i.e., temperature and relative humidity.</p>
+    </div>
+    <div class="box">
+      <p><strong>Minimum </strong></p>
+      <p>A simple test is performed to check the equilibrium convergence for moisture accompanied with a check for percentual heat loss increase.</p>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <p>The Best E-Learning.</p>
+  </div>
+</body>
+</html>

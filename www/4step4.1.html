@@ -1,0 +1,110 @@
+<style>
+  .step4-content {
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Book', sans-serif;
+  }
+
+  .step4-content p {
+    font-size: 1.75rem;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 100%;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+
+  .boxes4-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .step4-box {
+    position: relative;
+    width: 350px;
+    height: 375px;
+    background-color: #428BCA;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Ensure the additional text doesn't overflow */
+  }
+
+  .step4-box:hover {
+    background-color: #345c80; /* Change the background color when hovered */
+  }
+
+  .additional-text {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #345c80;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #ffffff; /* Text color for additional text */
+    display: none;
+    z-index: 1; /* Ensure the additional text is above the content */
+  }
+
+  .step4-box:hover .additional-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .step4-box p1{
+    font-size: 1.75rem;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 100%;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #ffffff;
+    z-index: 2; /* Ensure the text is above the additional text */
+  }
+
+  .step4-box p2{
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #ffffff;
+    z-index: 2; /* Ensure the text is above the additional text */
+  }
+  
+  .step4-box:hover p1 {
+    display: none; /* Hide  text on hover */
+  }
+
+  .step4-box h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    margin-left: 10px;
+    color: #ffffff;
+  }
+</style>
+
+  <div class="step4-content">
+    <p>The outdoor climate is generally defined as the boundary condition of the exterior surface of the building component. The necessary parameters for HAM simulations are defined within standard EN 15026 and include following variables: temperature, relative humidity or vapor pressure, direct and diffuse solar (shortwave) radiation, downward thermal (longwave) radiation, wind speed and direction, and precipitation on a horizontal plane or normal to the wall. Some of the parameters are dependent on the angle between the component and the measured direction, therefore conversion models are adopted to estimate the impinging quantity, e.g. the wind driven rain model available in EN ISO 15927-3. Climate data is assessed on three aspects: the spatial resolution, temporal resolution and the evaluation period (climate change). </p>
+    <div style="display: flex; justify-content: space-between;">
+      <img width="150" src="pictures/Geografical.png" alt="icon_files" height="150" style="text-align: left;margin-left: 150px;">
+      <img width="150" src="pictures/Timeresolution.png" alt="icon_files" height="150" style="text-align: center;">
+      <img width="200" src="pictures/Timeline.png" alt="icon_files" height="150" style="text-align: right;margin-right: 150px;">
+  </div>
+  </div>

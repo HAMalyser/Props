@@ -1,0 +1,129 @@
+<style>
+  .step10-content {
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Book', sans-serif;
+  }
+
+  .step10-content p {
+    font-size: 1.75rem;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 100%;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+
+  .boxes10-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .step10-box {
+    position: relative;
+    width: 350px;
+    height: 375px;
+    background-color: #428BCA;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Ensure the additional text doesn't overflow */
+  }
+
+  .step10-box:hover {
+    background-color: #345c80; /* Change the background color when hovered */
+  }
+
+  .additional-text {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #345c80;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #ffffff; /* Text color for additional text */
+    display: none;
+    z-index: 1; /* Ensure the additional text is above the content */
+  }
+
+  .step10-box:hover .additional-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .step10-box p1{
+    font-size: 1.75rem;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 100%;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #ffffff;
+    z-index: 2; /* Ensure the text is above the additional text */
+  }
+
+  .step10-box p2{
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #ffffff;
+    z-index: 2; /* Ensure the text is above the additional text */
+  }
+  
+  .step10-box:hover p1 {
+    display: none; /* Hide  text on hover */
+  }
+
+  .step10-box h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    margin-left: 10px;
+    color: #ffffff;
+  }
+</style>
+
+  <div class="step10-content">
+    <p>When determining material properties, a distinction is made between materials for which a technical datasheet is available and materials for which no properties have been determined. When a material is recently produced, usually a list of declared properties can be found in the technical datasheet.</p>
+  </div>
+
+  <div class="boxes10-container">
+    <div class="step10-box">
+      <h2>Superior</h2>
+      <p1>An existing comparable material or material file layout is used and modified according to a full characterization of the properties from experimental testing or obtained from the available technical datasheet.</p1>
+      <div class="additional-text">
+        <p2>An existing comparable material or material file layout is used and modified according to a full characterization of the properties from experimental testing or obtained from the available technical datasheet.</p2>
+      </div>
+    </div>
+  <div class="step10-box">
+      <h2>Advanced</h2>
+	  <p1>An existing material file is modified to represent the material. The available properties are used to select a comparable material from a hygrothermal material database. Subsequently, the basic properties and moisture-dependent parameters, such as moisture retention, conductivity, and vapor permeability, are scaled or replaced by the known properties from the technical sheets.</p1>
+    <div class="additional-text">
+      <p2>An existing material file is modified to represent the material. The available properties are used to select a comparable material from a hygrothermal material database. Subsequently, the basic properties and moisture-dependent parameters, such as moisture retention, conductivity, and vapor permeability, are scaled or replaced by the known properties from the technical sheets.</p2>
+    </div>  
+  </div>
+  <div class="step10-box">
+      <h2>Minimum</h2>
+	  <p1>After thorough consideration of the technical datasheet, a suitable representative or generic material is selected from the available hygrothermal database. This approach should be accompanied with a sensitivity analysis to determinethe dominant parameters and conservative approach.</p1>
+    <div class="additional-text">
+      <p2>After thorough consideration of the technical datasheet, a suitable representative or generic material is selected from the available hygrothermal database. This approach should be accompanied with a sensitivity analysis to determinethe dominant parameters and conservative approach.</p2>
+    </div>
+  </div>
+  </div>

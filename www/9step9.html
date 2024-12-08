@@ -1,0 +1,187 @@
+<style>
+  .step9-content {
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Book', sans-serif;
+  }
+
+  .step9-content p {
+    font-size: 1.75rem;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 100%;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+
+  .boxes9-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .step9-box {
+    position: relative;
+    width: 350px;
+    height: 415px;
+    background-color: #428BCA;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Ensure the additional text doesn't overflow */
+  }
+
+  .step9-box1 {
+    position: relative;
+    width: 350px;
+    height: 415px;
+    background-color: #428BCA;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Ensure the additional text doesn't overflow */
+  }
+
+  .step9-box:hover {
+    background-color: #345c80; /* Change the background color when hovered */
+  }
+
+  .additional-text {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #345c80;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #ffffff; /* Text color for additional text */
+    display: none;
+    z-index: 1; /* Ensure the additional text is above the content */
+  }
+
+  .step9-box:hover .additional-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .step9-box p1{
+    font-size: 1.75rem;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 100%;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #ffffff;
+    z-index: 2; /* Ensure the text is above the additional text */
+  }
+
+  .step9-box1 p1{
+    font-size: 1.75rem;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 100%;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #ffffff;
+    z-index: 2; /* Ensure the text is above the additional text */
+  }
+
+  .step9-box1 h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    margin-left: 10px;
+    color: #ffffff;
+  }
+
+  .step9-box p2{
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #ffffff;
+    z-index: 2; /* Ensure the text is above the additional text */
+  }
+  
+  .step9-box:hover p1 {
+    display: none; /* Hide  text on hover */
+  }
+
+
+  .step9-box h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    margin-left: 10px;
+    color: #ffffff;
+  }
+
+  .step9-content ul {
+      font-size: 1.75rem; /* Adjust the font size for paragraphs */
+	    font-family: 'Franklin Gothic Book', sans-serif;
+      text-align: left; /* Center text horizontally within each paragraph */
+      word-wrap: break-word; /* Allow words to break and wrap onto the next line */
+      max-width: 100%; /* Set a maximum width for the text */
+      list-style-type: disc; /* Use 'disc' for filled circles, 'circle' for empty circles, 'square' for filled squares, or 'none' for no bullets */
+      margin-left: 100px; /* Adjust the margin for spacing between the box and bullets */
+    }
+
+
+    .step9-content ul li {
+      font-size: 1.75rem; /* Adjust the font size for paragraphs */
+	    font-family: 'Franklin Gothic Book', sans-serif;
+      text-align: left; /* Center text horizontally within each paragraph */
+      word-wrap: break-word; /* Allow words to break and wrap onto the next line */
+      max-width: 100%; /* Set a maximum width for the text */
+      margin-left: 125px; /* Adjust the margin for spacing between the box and bullets */
+    }
+</style>
+
+  <div class="step9-content">
+    <p style="margin-top: 0px;">Still under construction.</p>
+  </div>
+
+  <div class="boxes9-container">
+    <div class="step9-box1">
+      <h2>Superior / Advanced</h2>
+      <p1>For existing constructions:</p1>
+      <p1>Use initial conditions which are defined based on in situ measurements for temperature, relative humidity and moisture content at different locations and depths in the assembly.</p1>
+    </div>
+  <div class="step9-box">
+      <h2>Superior / Advanced</h2>
+	    <p1>For new constructions:</p1>
+      <p1>The initial condition for temperature is set to 20 °C  and the humidity is defined based on the free water during the construction phase and the rainfall during construction.</p1>
+        <div class="additional-text">
+          <p2>For new constructions:</p2>
+          <p2>The initial condition for temperature is set to 20 °C  and the humidity is defined based on the free water during the construction phase. Alternatively, these are calculated based on an initialization model to calculate e.g. the moisture ingress for exposed periods of rainfall in the construction phase. Note that the rainfall should be  representative for the period of construction.</p2>
+        </div>  
+  </div>
+  <div class="step9-box">
+      <h2>Minimum</h2>
+	  <p1>The initial moisture conditions for construction materials are determined by literature, such as the ASHREA 160 regulations or EN15026. </p1>
+    <div class="additional-text">
+      <p2>There, for new constructions, the initial moisture content of materials should be two times EMC90* for concrete and two times EMC80 for all other materials, except when drying or protection procedures are implemented during the construction phase. For existing constructions and retrofit designs, the predefined initial conditions are EMC90 for concrete and EMC80 for all other materials.</p2>
+      <p2>According to the EN 15026 standard, a temperature of 20 °C and humidity of 80% is applied for existing buildings and 20 °C except for new builds were an humidity of 50% shall be applied, if materials were stored in conditioned places.</p2>
+    </div>
+  </div>
+  </div>

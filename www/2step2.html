@@ -1,0 +1,134 @@
+<style>
+  .step2-content {
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Book', sans-serif;
+  }
+
+  .step2-content p {
+    font-size: 1.75rem;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 100%;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+
+  .boxes2-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .step2-box {
+    position: relative;
+    width: 350px;
+    height: 375px;
+    background-color: #428BCA;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Ensure the additional text doesn't overflow */
+  }
+
+  .step2-box:hover {
+    background-color: #345c80; /* Change the background color when hovered */
+  }
+
+  .additional-text {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #345c80;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #ffffff; /* Text color for additional text */
+    display: none;
+    z-index: 1; /* Ensure the additional text is above the content */
+  }
+
+  .step2-box:hover .additional-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .step2-box p1{
+    font-size: 1.75rem;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 100%;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #ffffff;
+    z-index: 2; /* Ensure the text is above the additional text */
+  }
+
+  .step2-box p2{
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #ffffff;
+    z-index: 2; /* Ensure the text is above the additional text */
+  }
+  
+  .step2-box:hover p1 {
+    display: none; /* Hide  text on hover */
+  }
+
+  .step2-box h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    margin-left: 10px;
+    color: #ffffff;
+  }
+</style>
+
+  <div class="step2-content">
+    <p>In this step, we're examining how a building performs and identifying potential problems, like issues with heat and moisture. These problems can vary, affecting the appearance of the façade, functionality, or even the structure of the building. Some problems, like mold, can be harmful to people in the building. The user will choose the specific details and concerns they want to focus on for the materials. This tool doesn't provide specific predictions for risks or severity, but refer to the guidelines from the National Research Council of Canada and the ISO 13823 standard for more information on evaluating building durability.</p>
+  </div>
+
+  <div class="boxes2-container">
+    <div class="step2-box">
+      <h2>Superior</h2>
+      <p1>Using a performance criterion or degradation model specific to the material through a quantification process involving the measurement of material or building-specific sensitivity.</p1>
+      <div class="additional-text">
+        <p2>
+          This approach involves defining a performance criterion or degradation model tailored to a material by quantifying its sensitivity through empirical measurement. While utilizing a dose-response function from literature, the response is adjusted to align with the material's unique sensitivity profile. This scaled response becomes an integral part of the criterion, ensuring a more accurate representation of how the material or building responds to various stressors, thereby enhancing the precision of performance predictions.</p2>
+      </div>
+    </div>
+  <div class="step2-box">
+      <h2>Advanced</h2>
+	  <p1>Calculating a dose-response index by considering various risk-inducing factors, such as temperature, relative humidity, moisture content, or solar radiation, especially in scenarios involving surface degradation of discolouring.</p1>
+    <div class="additional-text">
+      <p2>A dose-response index considers diverse risk factors such as temperature, relative humidity, moisture content, and solar radiation. By examining the cumulative impact of these factors, the dose-response criteria provide a measure for the material's sensitivity to environmental variables. It offers a nuanced understanding of how varying conditions contribute to the overall performance, enabling more precise evaluation and targeted mitigation strategies.</p2>
+    </div>  
+  </div>
+  <div class="step2-box">
+      <h2>Minimum</h2>
+	  <p1>Assessing the moisture tolerance of a construction component by comparing the total moisture content after one evaluation cycle to its initial state, thereby determining its resilience to moisture-induced changes.</p1>
+    <div class="additional-text">
+      <p2>This straightforward method allows for the assessment of the component's moisture tolerance without specifics like material sensitivity, by focusing solely on the change in moisture content over 10 years. When assessing drying potential, the focus is on determining if accumulated moisture can be removed from the construction. The goal is to keep the increase in annual average moisture content below 1% over five years or more. Additionally, the accumulated moisture should not lead to failure over the construction's lifespan, which is at least 30 years.</p2>
+    </div>
+  </div>
+  </div>
+
+  <div class="step2-content">
+    <p>The selected degradation model will in turn determine the required simulation outputs (e.g. temperature, relative humidity, moisture content, …), the timestep, and exact location in the building component for which the simulation outputs are exported. It should be noted that collecting all simulation outputs for every grid cel, location, and timestep, typically entails an exponential computational expense in time and storage capacity.</p>
+  </div>

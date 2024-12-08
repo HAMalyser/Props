@@ -1,0 +1,228 @@
+<style>
+  .step8-content {
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Book', sans-serif;
+  }
+
+  .step8-content p {
+    font-size: 1.75rem;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 100%;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+
+  .boxes8-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .step8-box1 {
+    position: relative;
+    width: 350px;
+    height: 195px;
+    background-color: #428BCA;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Ensure the additional text doesn't overflow */
+  }
+
+  .step8-box1:hover {
+    background-color: #345c80; /* Change the background color when hovered */
+  }
+
+  .additional-text1 {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #345c80;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #ffffff; /* Text color for additional text */
+    display: none;
+    z-index: 1; /* Ensure the additional text is above the content */
+  }
+
+  .step8-box1:hover .additional-text1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .step8-box1:hover p1 {
+    display: none; /* Hide  text on hover */
+  }
+
+  .step8-box1 p1{
+    font-size: 1.75rem;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 100%;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #ffffff;
+    z-index: 2; /* Ensure the text is above the additional text */
+  }
+
+  .step8-box1 p1{
+    font-size: 1.75rem;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 100%;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #ffffff;
+    z-index: 2; /* Ensure the text is above the additional text */
+  }
+
+  .step8-box1 h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    margin-left: 10px;
+    color: #ffffff;
+  }
+
+  .step8-box1 p2{
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #ffffff;
+    z-index: 2; /* Ensure the text is above the additional text */
+  }
+
+  .step8-box2 {
+    position: relative;
+    width: 710px;
+    height: 195pxpx;
+    background-color: #428BCA;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Ensure the additional text doesn't overflow */
+  }
+
+  .step8-box2:hover {
+    background-color: #345c80; /* Change the background color when hovered */
+  }
+
+  .additional-text2 {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #345c80;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #ffffff; /* Text color for additional text */
+    display: none;
+    z-index: 1; /* Ensure the additional text is above the content */
+  }
+  .step8-box2:hover .additional-text2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .step8-box2:hover p1 {
+    display: none; /* Hide  text on hover */
+  }
+
+  .step8-box2 p1{
+    font-size: 1.75rem;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 100%;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #ffffff;
+    z-index: 2; /* Ensure the text is above the additional text */
+  }
+
+  .step8-box2 p1{
+    font-size: 1.75rem;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 100%;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #ffffff;
+    z-index: 2; /* Ensure the text is above the additional text */
+  }
+
+  .step8-box2 h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    margin-left: 10px;
+    color: #ffffff;
+  }
+
+  .step8-box2 p2{
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #ffffff;
+    z-index: 2; /* Ensure the text is above the additional text */
+  }
+
+</style>
+
+  <div class="step8-content">
+    <p style="text-align:center;"><img width="800" src="pictures/total_Source_Sinks.png" alt="icon_files" height="240"></p>
+    <p style="margin-top: 0px;">This section focusses on the field and surface conditions of cells in the model. Cell conditions can relate either to the entire cell or just to its surface. The former is referred to as field condition, whereas the latter is known as surface condition and includes resistances and flux-resistance properties. Field conditions can simulate various source and sink phenomena, such as the movement or leakage of moisture, air, and heat. Surface or resistance conditions, on the other hand, introduce barriers to air, moisture, and heat transfers. The surface conditions can also be used to model a simplified interface resistance between two materials to avoid assuming a continuous pore system at the interface. </p>
+  </div>
+
+  <div class="boxes8-container">
+    <div class="step8-box1">
+      <h2>Superior</h2>
+      <p1>The sources, sinks and surface conditions are based on measurements in situ.</p1>
+      <div class="additional-text1">
+        <p2>The sources, sinks and surface conditions are based on measurements in situ.</p2>
+      </div> 
+    </div>
+  <div class="step8-box2">
+      <h2>Advanced / Minimum</h2>
+	  <p1>The sources, sinks and surface, conditions are set to default values or values found in literature. </p1>
+    <div class="additional-text2">
+      <p2>The sources, sinks and surface, conditions are set to default values or values found in literature. Conducting a sensitivity analyses is necessary to systematically examining the impact of variations in the applied field and surface conditions on the simulation output. This allows for a comprehensive understanding of the components response to different scenarios from an optimistic to a pessimistic approach.</p2>
+    </div>  
+  </div>
+  </div>

@@ -1,0 +1,134 @@
+<style>
+  .step10-content {
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Book', sans-serif;
+  }
+
+  .step10-content p {
+    font-size: 1.75rem;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 100%;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+
+  .boxes10-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .step10-box {
+    position: relative;
+    width: 350px;
+    height: 360px;
+    background-color: #428BCA;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Ensure the additional text doesn't overflow */
+  }
+
+  .step10-box:hover {
+    background-color: #345c80; /* Change the background color when hovered */
+  }
+
+  .additional-text {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #345c80;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #ffffff; /* Text color for additional text */
+    display: none;
+    z-index: 1; /* Ensure the additional text is above the content */
+  }
+
+  .step10-box:hover .additional-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .step10-box p1{
+    font-size: 1.75rem;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 100%;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #ffffff;
+    z-index: 2; /* Ensure the text is above the additional text */
+  }
+
+  .step10-box p2{
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    text-align: left;
+    word-wrap: break-word;
+    max-width: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #ffffff;
+    z-index: 2; /* Ensure the text is above the additional text */
+  }
+  
+  .step10-box:hover p1 {
+    display: none; /* Hide  text on hover */
+  }
+
+  .step10-box h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: 'Franklin Gothic Book', sans-serif;
+    margin-left: 10px;
+    color: #ffffff;
+  }
+</style>
+
+  <div class="step10-content">
+    <p>In various scenarios, especially in heritage cases, materials may be unidentified, lacking technical datasheets, making it difficult to ascertain their properties. Materials, over time, may degrade or undergo modifications, further complicating the determination of their characteristics. Moreover, even within a single material type, there can be significant variability due to differences in raw material origin, natural variations, and fabrication methods. This inherent variability makes it challenging to create representative materials for renovation projects. Therefore, understanding the impact of different material properties on the hygrothermal behavior of assemblies is essential, necessitating the use of modeling approaches and sensitivity analyses.</p>
+  </div>
+
+  <div class="boxes10-container">
+    <div class="step10-box">
+      <h2>Superior</h2>
+      <p1>The material undergoes a complete characterization for all properties listed in Table above. Additionally, the effect of inherent material variability on the output is assessed with  sensitivity analysis.</p1>
+      <div class="additional-text">
+        <p2>The material undergoes a complete characterization for all properties listed in Table above. Additionally, the effect of inherent material variability on the output is assessed with  sensitivity analysis.</p2>
+      </div>
+    </div>
+  <div class="step10-box">
+      <h2>Advanced</h2>
+	  <p1>A partial characterization is performed, focusing on the most important material properties. To determine the significance of a parameter, either a sensitivity analysis is conducted, or similar cases described in literature are examined. </p1>
+    <div class="additional-text">
+      <p2>A partial characterization is performed, focusing on the most important material properties. To determine the significance of a parameter, either a sensitivity analysis is conducted, or similar cases described in literature are examined. By doing so, engineers and designers can identify and prioritize the critical material properties that have the most substantial impact on the risk assessment.  </p2>
+    </div>  
+  </div>
+  <div class="step10-box">
+      <h2>Minimum</h2>
+	  <p1>When no properties are available, insight about the impact of different properties on the response should be obtained. For each property, a range of values must be considered, including low, average, and high values. Specific quantities can be obtained from material databases or literature.</p1>
+    <div class="additional-text">
+      <p2>When no properties are available, insight about the impact of different properties on the response should be obtained. For each property, a range of values must be considered, including low, average, and high values. Specific quantities can be obtained from material databases or literature. By varying the values, the material’s behavior can be observed under different conditions and the most critical properties that impact its performance can be defined. </p2>
+    </div>
+  </div>
+  </div>
+
+  <div class="step10-content">
+    <p>It is recommended to fit storage and transport measurements to analytical functions. For example, the Van Genuchten (1980) bimodal and trimodal equations are commonly used to fit the moisture retention functions to prevent convergence problems during simulations. The superior category requires a complete characterization of the material that incorporates a stochastic approach for the material. The approach considers the natural variability within a single material. The variation in each material property should cover 95% of its distribution: assuming a normal distribution, this relates to 1 standard deviation around the mean. For the advanced category an increased limit is considered, i.e., + 2 StDev and -2 StDev. For the Minium requirement, low, average and high values are considered based on literature. </p>
+  </div>
+
